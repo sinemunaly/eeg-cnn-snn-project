@@ -4,10 +4,14 @@
 
 - Dataset: EEG Eye State Classification
 - Model: 1D CNN
-- Preprocessing: StandardScaler
+- Preprocessing: StandardScaler normalization
 - Train/Test split: 80/20
 - Epochs: 10
-- Result: 0.73 accuracy
+- Optimizer: Adam
+- Loss: Binary Crossentropy
 
-Observation:
-CNN baseline EEG sinyallerinde temel patternleri öğrenebildi.
+### Result:
+- Test Accuracy: 0.73
+
+### Observation:
+CNN baseline EEG sinyallerinde temel patternleri öğrenebildi ancak temporal bağımlılıkları modellemede sınırlı kaldı.
